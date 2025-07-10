@@ -1,0 +1,85 @@
+/* Estilos personalizados para el menú */
+
+/* Color blanco para los enlaces del menú */
+.navbar-fullscreen-links li a {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+/* Color dorado al pasar el mouse */
+.navbar-fullscreen-links li a:hover {
+    color: #FFD700 !important; /* Color dorado */
+    text-decoration: none;
+}
+
+/* Estilos para el botón de menú */
+.navbar-toggle {
+    background-color: #000 !important; /* Fondo negro */
+    border: 2px solid #fff !important; /* Borde blanco */
+    padding: 10px !important; /* Más padding para hacerlo más grande */
+    margin-right: 15px !important; /* Margen original */
+    margin-top: 18px !important; /* Margen original */
+    margin-bottom: 18px !important; /* Margen original */
+    border-radius: 4px !important;
+    position: absolute !important; /* Posición absoluta para mantenerlo fijo */
+    right: 0 !important; /* Alineado a la derecha */
+    top: 0 !important; /* Alineado arriba */
+    z-index: 100 !important; /* Asegurar que esté por encima de otros elementos */
+}
+
+/* Barras del botón de menú más visibles */
+.navbar-toggle .icon-bar {
+    background-color: #fff !important; /* Barras blancas */
+    height: 3px !important; /* Barras más gruesas */
+    width: 25px !important; /* Barras más anchas */
+}
+
+/* Estilo para el texto "Menú" */
+.menu-text {
+    color: #000; /* Cambio a color negro */
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute !important;
+    right: 75px !important; /* Posicionado a la izquierda del botón */
+    top: 19px !important; /* Alinear con el botón */
+    z-index: 99 !important;
+}
+
+/* Estilos para los iconos de redes sociales */
+.footer-container a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.footer-container a:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    background-color: white; /* Fondo blanco al pasar el mouse */
+}
+
+/* Aplicar filtro para que los iconos siempre estén en blanco */
+.footer-container a img {
+    filter: brightness(0) invert(1); /* Iconos siempre en blanco */
+    transition: filter 0.3s ease;
+}
+
+/* Al pasar el mouse, cambiar los iconos a negro */
+.footer-container a:hover img {
+    filter: brightness(0); /* Cambia los iconos a color negro */
+}
+
+/* Si quieres un espaciado específico entre los iconos */
+.footer-container a:first-child {
+    margin-left: 0;
+}
+
+.footer-container a:last-child {
+    margin-right: 0;
+}
+
+/* Asegurar que el contenedor del navbar tenga posición relativa para posicionamiento absoluto interno */
+.navbar-fixed-top .container {
+    position: relative !important;
+}
